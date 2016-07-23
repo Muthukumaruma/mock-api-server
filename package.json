@@ -1,0 +1,17 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gopalakrishnan Subramani <gopalakrishnan.subramani@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.8.16",
+    "body-parser": "^1.15.2",
+    "jsonwebtoken": "^7.0.1",
+    "lodash": "^4.13.1"
+  }
+}
