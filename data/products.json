@@ -1,34 +1,10 @@
 {
   "products": [
     {
-      "brandId": 5,
-      "camera": "8 MP AF CMOS sensor with xenon flash, 720p HD video recording",
-      "cpu": "1 GHz Qualcomm QSD 8250 Scorpion (Snapdragon)",
-      "display": "3.7\" 480 x 800",
-      "gpu": "Adreno 200",
-      "id": 94,
-      "name": "HTC 7 Mozart",
-      "os": "Windows Phone 7",
-      "ram": "576 MB",
-      "size": "85.2 cm3 119 x 60.2 x 11.9 mm",
-      "storage": "8.5 GB",
-      "weight": "130 gram",
-      "year": 2010
+      "id": 94
     },
     {
-      "brandId": 1,
-      "camera": "5 MP AF with flash, 720p HD video recording",
-      "cpu": "1 GHz Qualcomm QSD 8250 Scorpion (Snapdragon)",
-      "display": "3.8\" 480 x 800",
-      "gpu": null,
-      "id": 95,
-      "name": "HTC 7 Surround",
-      "os": "Windows Phone 7",
-      "ram": "448 MB",
-      "size": "95.4 cm3 119.7 x 61.5 x 13 mm",
-      "storage": "16.5 GB",
-      "weight": "165 g",
-      "year": 2010
+      "id": 95
     },
     {
       "brandId": 3,
@@ -37,7 +13,7 @@
       "display": "3.8\" 480 x 800",
       "gpu": "Adreno 200",
       "id": 96,
-      "name": "HTC 7 Trophy",
+      "name": "HTC 7 None",
       "os": "Windows Phone 7",
       "ram": "576 MB",
       "size": "92.8 cm3 118.5 x 65.5 x 12 mm",

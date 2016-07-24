@@ -1,21 +1,19 @@
 // server.js
 var jsonServer = require('json-server')
 
-var jwt        = require("jsonwebtoken");
-
-var _ = require("lodash");
-
-//BEWARE: Not best pratice, this must be passed via environment variable or config file
-var JWT_SECRET = process.env.JWT_SECRET || "secrect";
-function createToken(id){
-	return jwt.sign(id, JWT_SECRET);
-}
-
 var server = jsonServer.create()
 
 var middlewares = jsonServer.defaults()
 
 server.use(middlewares)
+
+
+var config = require('./config');
+
+if (config.authEnabled) {
+    var auth = require("./auth");
+    server.use(auth);
+}
  
 console.log("starting api server"); 
 //middleware to generate delayed response, for promise learning
