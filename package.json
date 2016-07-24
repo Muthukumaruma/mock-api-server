@@ -9,9 +9,10 @@
   "author": "Gopalakrishnan Subramani <gopalakrishnan.subramani@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.8.16",
     "body-parser": "^1.15.2",
-    "jsonwebtoken": "^7.0.1",
+    "express": "^4.14.0",
+    "json-server": "^0.8.16",
+    "jsonwebtoken": "^7.1.6",
     "lodash": "^4.13.1"
   }
 }
