@@ -40,10 +40,12 @@ router.post('/api/authenticate', function(req, res) {
             token: jwt
         }); 
     } else {
-        res.json({
+        /*res.json({
             type: false,
             data: "Incorrect username/password"
-        });    
+        });*/
+        res.sendStatus(403);
+            
         console.log("incorrect username/password")
     }
 })
