@@ -44,8 +44,9 @@ server.use(function(req, res, next){
 server.use(jsonServer.rewriter({
   '/api/products': '/api/products/products',
   '/api/brands': '/api/brands/brands',
+  '/api/contacts': '/api/contacts/contacts',
   '/api/cities': '/api/cities/cities',
-  '/api/states': '/api/states/states'
+  '/api/states': '/api/states/states',
 }))
 
 var router = jsonServer.router('data/products.json')
@@ -53,6 +54,10 @@ server.use('/api/products', router)
  
 var router = jsonServer.router('data/brands.json')
 server.use('/api/brands', router)
+
+
+var router = jsonServer.router('data/contacts.json')
+server.use('/api/contacts', router)
 
 var router = jsonServer.router('data/cities.json')
 server.use('/api/cities', router)
