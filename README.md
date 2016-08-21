@@ -12,10 +12,13 @@ jwt web tokens, express
 
 	npm install
 
-to run with nodemon, nodemon automatically restart server on data change
+to run  mock server
 
-	npm install nodemon -g
-	nodemon
+	node index.js
+	
+the server starts at http://localhost:7070
+
+if  you want to modify the port, edit index.js source file.
 
 we have below apis, products are taken from wikipedia smart phone page
 
@@ -23,6 +26,7 @@ we have below apis, products are taken from wikipedia smart phone page
 	2. /api/brands
 	3. /api/cities
 	4. /api/states
+	5. /api/contacts
 
 we also have delayed resonse apis, useful for promise.all during promise workshop. Delayed api adds random 3-8 seconds delay before response.
 
@@ -30,6 +34,7 @@ we also have delayed resonse apis, useful for promise.all during promise worksho
 	2. /delayed/api/brands
 	3. /delayed/api/cities
 	4. /delayed/api/states
+	5. /delayed/api/contacts
 
 You can enable simple token authentication by chaning config.js file, modifying authEnabled to true. We have two users with hardcoded password
 	
@@ -39,6 +44,13 @@ You can enable simple token authentication by chaning config.js file, modifying 
 	username: admin
 	password: admin
 
+	
+To Authenticate with the server, the client should call below api
+
+	POST http://localhost:7070/api/authenticate
+	
+	with 'username' and 'password' field, username set to user and password set to admin
+	
 TODO:
 	1. Enable/Disable CORS for lessions
 	2. Move to LokiJS

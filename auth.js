@@ -12,8 +12,8 @@ router.use(bodyParser.json());
 
 //EXAMPLE only, hardcoded, plain password
 var users = {
-	'user': {name: 'user', 'password':'user', token:''},
-	'admin':{name:'admin', password: 'admin', token:'' }
+	'user': {name: 'user', 'password':'user', role:'user', token:''},
+	'admin':{name:'admin', password: 'admin', role:'admin', token:'' }
 }
 
 //BEWARE: Not best pratice, this must be passed via environment variable or config file
@@ -35,8 +35,9 @@ router.post('/api/authenticate', function(req, res) {
        user.token = jwt;
 
        res.json({
-            type: true,
-            data: user,
+            authenticated: true,
+            data: {'token': user.token},
+			identity: {'name': user.name, 'role': user.role},
             token: jwt
         }); 
     } else {
