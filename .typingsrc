@@ -1,0 +1,4 @@
+{
+    "proxy" : "http://training:abc%401234@10.9.64.4:8002",
+    "rejectUnauthorized" : false
+}
