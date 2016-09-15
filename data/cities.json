@@ -1,11 +1,6 @@
 {
     "cities": [
-        {
-            "id": 0, 
-            "name": "Mumbai", 
-            "state": "Maharashtra", 
-            "stateId": 26
-        }, 
+         
         {
             "id": 1, 
             "name": "Delhi", 
@@ -7289,6 +7284,12 @@
             "name": "Sarsod", 
             "state": "Haryana", 
             "stateId": 3
+        },
+		{
+            "id": 1215, 
+            "name": "Mumbai", 
+            "state": "Maharashtra", 
+            "stateId": 26
         }
     ]
 }

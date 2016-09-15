@@ -43,10 +43,10 @@ server.use(function(req, res, next){
 
 server.use(jsonServer.rewriter({
   '/api/products': '/api/products/products',
-  '/api/brands': '/api/brands/brands',
-  '/api/contacts': '/api/contacts/contacts',
+  '/api/brands': '/api/console.log("http://localhost:7070/api/products");/brands',
   '/api/cities': '/api/cities/cities',
   '/api/states': '/api/states/states',
+  '/api/cart': '/api/cart/cart',
 }))
 
 var router = jsonServer.router('data/products.json')
@@ -55,20 +55,31 @@ server.use('/api/products', router)
 var router = jsonServer.router('data/brands.json')
 server.use('/api/brands', router)
 
-
-var router = jsonServer.router('data/contacts.json')
-server.use('/api/contacts', router)
-
 var router = jsonServer.router('data/cities.json')
 server.use('/api/cities', router)
 
 var router = jsonServer.router('data/states.json')
 server.use('/api/states', router)
 
+var router = jsonServer.router('data/cart.json')
+server.use('/api/cart', router)
+
 server.listen(7070, function () {
   console.log('JSON API Server is running on port 7070')
 
-  console.log("You have two end points, delayed simulate slow response between 3-8 seconds ");
+  console.log("You have two types of end points, normal & delayed. delayed simulate slow response between 3-8 seconds ");
+  
   console.log("http://localhost:7070/api/products");
+  console.log("http://localhost:7070/api/brands");
+  console.log("http://localhost:7070/api/cities");
+  console.log("http://localhost:7070/api/states");
+  console.log("http://localhost:7070/api/cart");
+  
+  console.log("Delayed APIs")
+  
   console.log("http://localhost:7070/delayed/api/products");
+  console.log("http://localhost:7070/delayed/api/brands");
+  console.log("http://localhost:7070/delayed/api/cities");
+  console.log("http://localhost:7070/delayed/api/states");
+  console.log("http://localhost:7070/delayed/api/cart");
 })

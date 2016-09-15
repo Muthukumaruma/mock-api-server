@@ -1,11 +1,6 @@
 {
     "states": [
         {
-            "code": "DN", 
-            "id": 0, 
-            "name": "Dadra and Nagar Haveli"
-        }, 
-        {
             "code": "DL", 
             "id": 1, 
             "name": "Delhi"
