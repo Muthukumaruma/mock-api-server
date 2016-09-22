@@ -43,7 +43,7 @@ server.use(function(req, res, next){
 
 server.use(jsonServer.rewriter({
   '/api/products': '/api/products/products',
-  '/api/brands': '/api/console.log("http://localhost:7070/api/products");/brands',
+  '/api/brands': '/api/brands/brands',
   '/api/cities': '/api/cities/cities',
   '/api/states': '/api/states/states',
   '/api/cart': '/api/cart/cart',
